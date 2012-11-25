@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+X-COMMENT: Main-Class will be added automatically by build
+
+Name: it/webprofessor/java/josteo
+Implementation-Title: Josteo
+Implementation-Version: 1.0.1
+Implementation-Vendor: webprofesor
+
+

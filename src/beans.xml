@@ -1,0 +1,20 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+    <bean id="PazienteRepository" class="josteo.infrastructure.repositories.Pazienti.PazienteRepository" singleton="true" />
+
+    <bean id="PazienteService" class="josteo.application.PazienteService">
+        <constructor-arg>
+            <ref local="PazienteRepository"/>
+        </constructor-arg> 
+    </bean>
+
+    <bean id="TipoAnamnesiService" class="josteo.application.TipoAnamnesiService"/>
+    <bean id="TipoEsameService" class="josteo.application.TipoEsameService"/>
+
+
+    <bean id="HomeView" class="josteo.views.HomeView"/>
+    <bean id="ImportView" class="josteo.views.ImportView"/>
+    <bean id="ExportView" class="josteo.views.ExportView"/>
+    <bean id="LoggingView" class="josteo.views.LoggingView"/>
+</beans>
